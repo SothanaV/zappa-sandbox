@@ -33,7 +33,7 @@ aws_secret_access_key = <your secret_access_key>
 
 create superuser
 ```
-zappa manage dev create_admin_user admin admin@defellow.com qwer1234
+zappa manage dev create_admin_user <USER> <EMAIL> <PASSWORD>
 ```
 
 migrate db
