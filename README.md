@@ -52,7 +52,7 @@ zappa manage dev migrate
 ## install and settings
 install
 ```
-pip install django-s3-sqlite django-s3-storag
+pip install django-s3-sqlite django-s3-storage
 ```
 
 settings.py
@@ -84,6 +84,12 @@ AWS_S3_BUCKET_NAME_STATIC = YOUR_S3_BUCKET
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % YOUR_S3_BUCKET
 STATIC_URL = "https://%s/" % AWS_S3_CUSTOM_DOMAIN
 
+```
+
+collectstatic 
+```
+zappa update dev
+zappa manage dev "collectstatic --noinput"
 ```
 
 # Frontend
